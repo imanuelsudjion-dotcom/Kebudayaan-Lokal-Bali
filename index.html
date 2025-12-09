@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tari Kecak Bali</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- AUDIO AUTOPLAY -->
+<audio id="kecakAudio" src="audio/kecak.mp3" autoplay loop></audio>
+
+<!-- PARTICLES -->
+<canvas id="particles"></canvas>
+<canvas id="cursorTrail"></canvas>
+
+<!-- HERO SECTION -->
+<header class="hero" data-parallax="true">
+    <img src="img/hero.jpg" class="hero-bg" alt="">
+    <div class="hero-content">
+        <h1 class="glitch">TARI KECAK BALI</h1>
+        <p class="subtitle">Budaya Api · Suara · Trans · Magis</p>
+        <a href="#materi" class="btn">Jelajahi</a>
+    </div>
+</header>
+
+<!-- SECTION 1 -->
+<section id="materi" class="section">
+    <h2 class="reveal">Apa Itu Tari Kecak?</h2>
+    <p class="reveal reveal-left">
+        Tari Kecak adalah pertunjukan sakral Bali yang menggabungkan vokal “cak-cak-cak”, lingkaran penari,
+        dan energi ritual api. Tidak memakai musik gamelan — hanya suara manusia.
+    </p>
+
+    <div class="gallery">
+        <img src="img/kecak1.jpg" class="reveal" data-delay="1">
+        <img src="img/kecak2.jpg" class="reveal" data-delay="2">
+        <img src="img/kecak3.jpg" class="reveal" data-delay="3">
+    </div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="section dark">
+    <h2 class="reveal">Kenapa Kecak Begitu Ikonik?</h2>
+
+    <div class="features">
+
+        <div class="feature reveal reveal-right">
+            <h3>🔥 Energi Api Ritual</h3>
+            <p>
+                Api bukan dekorasi — melainkan simbol pemurnian dan batas antara dunia manusia dan roh.
+            </p>
+        </div>
+
+        <div class="feature reveal reveal-right" data-delay="1">
+            <h3>🌀 Trans Kolektif</h3>
+            <p>
+                Suara serempak para penari membuat atmosfer trance yang jarang ditemui di budaya lain.
+            </p>
+        </div>
+
+        <div class="feature reveal reveal-right" data-delay="2">
+            <h3>🎭 Epos Ramayana</h3>
+            <p>
+                Cerita Rahwana, Rama, Hanoman dan peperangan besar dituturkan lewat gerakan dan nyanyian.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="section">
+    <h2 class="reveal">Tempat Menonton Kecak Terbaik</h2>
+
+    <div class="location-list">
+
+        <div class="loc reveal">
+            <h3>Pura Uluwatu</h3>
+            <p>Paling populer, tebing tinggi + sunset merah = suasana epik.</p>
+            <button onclick="openMap('Uluwatu Temple Bali')" class="loc-btn">Lihat Lokasi</button>
+        </div>
+
+        <div class="loc reveal" data-delay="1">
+            <h3>GWK Cultural Park</h3>
+            <p>Area besar, lighting modern, cocok buat foto dan video.</p>
+            <button onclick="openMap('GWK Bali')" class="loc-btn">Lihat Lokasi</button>
+        </div>
+
+        <div class="loc reveal" data-delay="2">
+            <h3>Pura Dalem Taman Kaja</h3>
+            <p>Versi paling tradisional, atmosfer desa, sangat autentik.</p>
+            <button onclick="openMap('Pura Dalem Taman Kaja Bali')" class="loc-btn">Lihat Lokasi</button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
